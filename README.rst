@@ -3,7 +3,7 @@ pyzentao-specs
 ==============
 
 ``pyzentao-specs`` 包含了 `pyzentao <https://github.com/philip1134/pyzentao>`__ 的
-禅道API规格文件，``pyzentao`` 在 ``r0.3.0`` 版本之后不再更新规格文件，转由本项目持续更新。
+禅道API规格文件，在 ``pyzentao r0.4.0`` 版本之后不再维护规格文件，转由本项目更新。
 
 
 用法
@@ -23,14 +23,12 @@ pyzentao-specs
 
 .. code:: text
 
-    cp -r pyzentao-specs/v17.6 /path/to/my/project
-
-使用Windows的童鞋请自便。
+    cp -r pyzentao-specs/v17.6 /path/to/my/project/pyzentao-specs
 
 使用
 ~~~~
 
-使用自定义目录初始化 pyzentao 对象
+初始化 pyzentao 对象
 
 .. code:: python
 
@@ -40,10 +38,7 @@ pyzentao-specs
         "url": "http://my.zentao.site/zentao",
         "username": "admin",
         "password": "123456",
-        "spec": {
-            "path": "/path/to/my/project/v17.6", # 自定义规格文件的地址
-            "merge": False,
-        }
+        "spec": "/path/to/my/project/pyzentao-specs/v17.6"
     })
 
 如果需要支持新的禅道版本，可以提 issue，也可以使用 `miaou <https://github.com/philip1134/miaou>`__
